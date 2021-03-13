@@ -95,6 +95,8 @@ type MentionInputProps = Omit<TextInputProps, 'onChange'> & {
   value: string;
   onChange: (value: string) => any;
 
+  autoFocus?: boolean;
+
   partTypes?: PartType[];
 
   inputRef?: Ref<TextInput>;

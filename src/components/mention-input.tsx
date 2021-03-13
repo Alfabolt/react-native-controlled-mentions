@@ -21,6 +21,7 @@ const MentionInput: FC<MentionInputProps> = (
   {
     value,
     onChange,
+    autoFocus,
 
     partTypes = [],
 
@@ -137,7 +138,7 @@ const MentionInput: FC<MentionInputProps> = (
 
       <TextInput
         multiline
-
+        autoFocus={autoFocus}
         {...textInputProps}
 
         ref={handleTextInputRef}
